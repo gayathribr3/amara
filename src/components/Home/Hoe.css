@@ -1,0 +1,51 @@
+.home{
+height: 34vw;
+width: 90vw;
+ margin: 30px auto;
+    /*sets top and bottom margin to 30px and left and right to automatically distribute the available spaces equally on both sides of the element*/
+background:url('assets/WhatsApp Image 2024-07-05 at 19.47.23 (2).jpeg') no-repeat; 
+background-color: rgb(223, 59, 59);
+border-radius: 50px;
+background-size: contain;
+position: relative;
+font-family: Outfit;
+}
+.home-content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+            gap: 1vw;
+            /* creates a gap of 1.5% of the viewport's width between each item in the container.*/
+            max-width: 40%;
+            max-height: 85%;
+            bottom: 10%;
+            right: 5vw;
+}
+.home-content .quo{
+    text-align: right;
+    font-weight: 300;
+    font-size: max(1.5vw,10px);
+   
+}
+.home-content h2{
+    text-align: right;
+    color: white;
+    font-weight: 800;
+    font-size: 4vw;
+}
+.home-content p{
+    font-size: 1.5vw;
+    color: rgb(237, 194, 173);
+}
+.home-content button{
+border: rgb(237, 194, 173);
+border-style: dashed;
+    color: rgb(223, 59, 59);
+    font-weight: 550;
+    padding: max(1vw, 2px);
+    background-color: white;
+    font-size: max(1vw, 8px);
+    border-radius: 50px;
+    cursor: pointer;
+}

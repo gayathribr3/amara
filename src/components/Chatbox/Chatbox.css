@@ -1,0 +1,101 @@
+.fun-bottom {
+    position: relative;
+    width: 90vw;
+    margin: 5px auto;
+}
+
+.searchbox {
+    margin-bottom: 20px;
+    position: relative;
+    width: 90vw;
+    /* Make searchbox positioned relative to its parent */
+    bottom: 2px;
+    /* Position at the top of the parent container */
+    left: 0;
+    right: 0;
+    /* Set left margin to 5px for pinning to the left */
+    display: flex;
+    /* Adjust width to account for left margin */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color:rgb(216, 241, 254);
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+
+.searchbox input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    font-family: Outfit ;
+    outline: none;
+    padding: 8px;
+    max-width: 80%;
+    font-size: 18px;
+}
+input ::placeholder{
+ color: white;
+
+}
+.result{
+  
+    padding: 0px 5%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.result-title img{
+
+    width: max(10vw,50px);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.result-title p{
+    font-family: Outfit;
+    font-size: 26px;
+}
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.loader hr{
+    border-radius: 4px;;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #ef9d5d,#ffffff,#f8977f);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+.result-data p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}

@@ -1,0 +1,70 @@
+.fun{
+height: 30vw;
+width: 90vw;
+margin: 10px auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1vw;
+object-fit: contain;
+position: relative;
+}
+
+.fun .movies {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    width: max(28vw,50px);
+    height: 27vw;
+    position: relative;
+    cursor: pointer;
+    background-color: white;
+   
+}
+
+.fun .movies .image {
+   border: 3px solid rgb(212, 203, 189);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fun .movies .mov-desc{
+    font-family: Outfit;
+    background-color: white;
+    height: 7vw;
+    width: 28vw;
+    top:75%;
+    border: 3px solid rgb(212, 203, 189) ;
+    position: absolute;
+   
+}
+.fun .movies .mov-desc img{
+    position: absolute;
+    width:3vw ;
+    height: 3vw;
+    bottom: 7%;
+    right: 2%;
+
+}
+
+
+.fun .movies .mov-desc p{
+    font-family: Outfit;
+    padding: 3px;
+    font-size: max(2vw,7px);
+    font-weight: 300;
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 2%;
+    bottom: 50%;
+}
+@media (max-width:700px) {
+  .fun {
+    gap:0.1vh;
+    margin: 2%;
+  }
+  }
+
+

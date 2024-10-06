@@ -1,0 +1,65 @@
+.compo{
+background-color: blue;
+width: 90vw;
+height: 25vw;
+border-radius: 50px;
+margin: 30px auto;
+background: url('/assets/WhatsApp Image 2024-07-07 at 13.56.49.jpeg') no-repeat;
+background-size: contain;
+position: relative;
+background-color: rgb(222, 231, 244);
+box-shadow: 0 0 8px  rgba(4, 54, 124, 0.101);
+overflow: hidden;
+display: flex;
+}
+.compo-tog{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: end;
+  max-width: 70%;
+  text-align:right;
+  max-height: 80%;
+  right: 5vw;
+  top: 15%;
+  font-family: Outfit;
+}
+.compo .tog {
+    position: absolute;
+   right: 5vw;
+   bottom: 10%;
+
+}
+.compo-tog p{
+font-weight: 400px;
+font-size: max(3vw, 8px);
+color: #5f7be2;
+font-style: italic;
+
+}
+.compo-tog h3{
+    font-weight: 5px;
+    font-size: max(1.5vw, 6px);
+    color: #526fd7;
+    font-style: italic;
+
+}
+
+@media (max-width:700px) {
+    .compo-tog {
+        align-items: start;
+            text-align: left;
+            font-size: 8px;
+            gap: 0.5vh;
+        }
+  
+  .tog{
+    bottom: 0.2vh;
+    /* Adjust as needed */
+    right: 3.5vh;
+ }
+}
+
+
+
